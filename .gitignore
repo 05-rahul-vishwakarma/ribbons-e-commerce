@@ -13,6 +13,9 @@
 # testing
 /coverage
 
+# Error log files
+/ErrLogs/*.log
+
 # next.js
 /.next/
 /out/
