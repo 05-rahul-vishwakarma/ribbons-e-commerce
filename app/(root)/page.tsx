@@ -1,7 +1,8 @@
+import Carousel from '@/app/commonComponents/home/Carousel'
 export default function Home() {
-  return (
-     <section>
-        Home
-     </section>
-  );
+   return (
+      <section>
+         <Carousel /> 
+      </section>
+   );
 }
