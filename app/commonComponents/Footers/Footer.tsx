@@ -34,7 +34,7 @@ function IconRow() {
 
   return (
     <div className="bg-gray-100 py-6">
-      <div className="flex pl-8 justify-center space-x-4 sm:space-x-8 lg:space-x-12">
+      <div className="flex pl-8    space-x-4 sm:space-x-8 lg:space-x-12">
         {items.map((item, index) => (
           <div key={index} className="text-center">
             <div className="text-gray-700 mb-2 block mx-auto w-min ">{item.icon}</div>
