@@ -45,7 +45,7 @@ function ResponsiveAppBar() {
 
 
   return (
-    <AppBar style={{ background: 'white' , fontSize:"14px",color:"black" , padding:"0 2rem" }} position="sticky">
+    <AppBar style={{ background: 'white', fontSize: "14px", color: "black", padding: "0 2rem" }} position="sticky">
       <Container maxWidth="xl">
         <Toolbar disableGutters>
           {/* Logo Section */}
@@ -98,7 +98,7 @@ function ResponsiveAppBar() {
             >
               {pages.map((page, i) => (
                 <MenuItem key={i} onClick={handleCloseNavMenu}>
-                  <Typography textAlign="center" style={{color:"black"}} >{page.title}</Typography>
+                  <Typography textAlign="center" style={{ color: "black" }} >{page.title}</Typography>
                 </MenuItem>
               ))}
             </Menu>
@@ -108,7 +108,7 @@ function ResponsiveAppBar() {
           <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' } }}>
             {pages.map((page, i) => (
               <Link href={page.link} key={i}>
-                <Button style={{color:"black",fontWeight:"700"}} sx={{ my: 2,  display: 'block' }}>
+                <Button style={{ color: "black", fontWeight: "700" }} sx={{ my: 2, display: 'block' }}>
                   {page.title}
                 </Button>
               </Link>
@@ -124,7 +124,7 @@ function ResponsiveAppBar() {
               justifyContent: 'center',
               maxWidth: '300px',
               mx: 10,
-              color:'black',
+              color: 'black',
               borderBottom: '1px solid black',
             }}
           >
@@ -143,9 +143,9 @@ function ResponsiveAppBar() {
             <SearchIcon sx={{ color: 'black', mr: 1 }} />
           </Box>
 
-          <Box sx={{fontWeight:"700",fontSize:"14px" }} >
+          <Box sx={{ fontWeight: "700", fontSize: "14px" }} >
             My Account
-            <AddShoppingCartIcon sx={{m:2 }} />
+            <AddShoppingCartIcon sx={{ m: 2 }} />
           </Box>
 
         </Toolbar>
