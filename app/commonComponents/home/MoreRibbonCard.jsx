@@ -11,25 +11,30 @@ export default function MoreRibbonCard() {
   ];
 
   return (
-    <div className="h-auto mt-12 relative flex-row">
+    <div className=" mt-12 w-full bg-gray-100 ">
+      {" "}
+      {/* Center main container */}
       {cardItem.map((item, index) => (
-        <div key={index}>
-          <div className="bg-gray-100 w-full h-[13.33vh] flex justify-between items-center p-4">
-            <div>
-              <h3 className="text-lg font-semibold">{item.heading}</h3>
-              <div className="text-gray-700">{item.description}</div>
+        <div
+          key={index}
+          className="w-[95%] h-[13.33vh] flex justify-center justify-between items-center mx-auto p-8"
+        >
+          {" "}
+          {/* Center card */}
+          <div className=" ">
+            {" "}
+            {/* Center content within card */}
+            <div className="">
+              {" "}
+              {/* Text center alignment */}
+              <h3 className="text-gray-700 text-lg">{item.heading}</h3>
+              <div className="text-gray-500">{item.description}</div>
             </div>
-            <section>
-                  <div className="justify-center text-grey-300 ">
-                  <a
-                href="!"
-                className="button button--winona p-0 bg-orange-500 hover:bg-white-700 hover:text-white relative block focus:outline-none border-2 border-solid rounded-full text-center font-semibold uppercase tracking-widest align-middle overflow-hidden r-10"
-                data-text="Read More"
-              >
-                      <span className="align-middle block p-3 pr-10 pl-10">{item.btn}</span>
-                    </a>
-                  </div>
-                </section>
+          </div>
+          <div>
+            <button className="bg-orange-500 hover:bg-gray-200 text-black font-bold py-3 px-10 rounded-full ">
+              {item.btn}
+            </button>
           </div>
         </div>
       ))}

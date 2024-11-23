@@ -3,6 +3,7 @@ import RibbonCard from '../PopuplarRibbon/RibbonCard'
 import AvailableRibbon from '../PopuplarRibbon/AvailableRibbon';
 import MoreRibbonCard from '../MoreRibbonCard';
 import DiscovermoreRibbon from '../PopuplarRibbon/DiscovermoreRibbon';
+import Footer from '../../Footers/Footer';
 export default function PopRibbonCard() {
   return (
     <section className="">  
@@ -12,6 +13,8 @@ export default function PopRibbonCard() {
       <MoreRibbonCard/>
       <AvailableRibbon />  
       <DiscovermoreRibbon/>
+      <MoreRibbonCard/>
+      <Footer/>
     </section>  
   )
 }
